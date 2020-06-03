@@ -31,7 +31,7 @@ def parse_args(args):
       :obj:`argparse.Namespace`: command line parameters namespace
     """
     parser = argparse.ArgumentParser(
-        description="Just a Fibonacci demonstration")
+        description="Export volumetric parcellations to meshes.")
     parser.add_argument(
         "--version",
         action="version",
