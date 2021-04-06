@@ -42,7 +42,7 @@ def get_modality_data(sonata_instance, modality_name, downsampling = 1):
 
   data = {}
   for dataset_name in EXPECTED_MODALITY_NAMES[modality_name]:
-    data[dataset_name] = np.nan_to_num(get_data(sonata_instance, dataset_name)[::downsampling])
+    data[dataset_name] = get_data(sonata_instance, dataset_name)[::downsampling]
   
   return data
 
