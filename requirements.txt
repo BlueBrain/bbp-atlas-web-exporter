@@ -1,0 +1,5 @@
+numpy
+scipy
+pynrrd
+scikit-image
+randomaccessbuffer @ git+https://bbpgitlab.epfl.ch/dke/randomaccessbufferpy.git@v0.1.7

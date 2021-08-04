@@ -1,0 +1,1 @@
+Installs the `sonata2rab` CLI.
