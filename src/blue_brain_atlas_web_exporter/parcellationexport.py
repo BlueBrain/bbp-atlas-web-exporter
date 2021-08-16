@@ -144,7 +144,7 @@ def export_obj(vertices, triangles, filepath, origin, transform_3x3, decimation 
     os_to_dir = {
         "Linux": os.path.join("bin.Linux", "simplify"),
         "Darwin": os.path.join("bin.OSX", "simplify"),
-        "Linux": os.path.join("bin.Windows", "simplify.exe"),
+        "Windows": os.path.join("bin.Windows", "simplify.exe"),
     }
 
     full_binary_path = os.path.join(module_dirpath, "..", "..", "binaries", "Fast-Quadric-Mesh-Simplification", os_to_dir[platform.system()])
