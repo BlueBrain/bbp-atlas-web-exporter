@@ -147,7 +147,7 @@ def export_obj(vertices, triangles, filepath, origin, transform_3x3, decimation 
         "Windows": os.path.join("bin.Windows", "simplify.exe"),
     }
 
-    full_binary_path = os.path.join(module_dirpath, "..", "..", "binaries", "Fast-Quadric-Mesh-Simplification", os_to_dir[platform.system()])
+    full_binary_path = os.path.join(module_dirpath, "simplify", os_to_dir[platform.system()])
     os.chmod(full_binary_path, 750)
     args = f"{full_binary_path} {filepath} {filepath} {str(decimation)}"
     subprocess.run(args, shell=True, check=True)
@@ -229,14 +229,26 @@ def main():
         #     # masking the current region
         #     region_mask[nrrd_data == child_id] = 1
 
+        # all the regions to be added, in theory (aka. not taking into account that some may not be represented in the parcellation volume)
+        regions_to_add = region_node["_descendants"] + [region_id]
+        
+        # list of descendants that are actually represented in the parcellation volume
+        represented_regions_to_add = set()
+        
+        # among all the regions that should be added (in theory), keep only the ones that are actually represented in the annotation volume
+        # (this is to speedup thing and not waste time on aggregating not-existing regions)
+        for r_id in regions_to_add:
+            if r_id in unique_values_in_nrrd:
+                represented_regions_to_add.add(r_id)
 
-
-        descendants_and_current = set(region_node["_descendants"])
-        descendants_and_current.add(region_id)
-        # region_mask = np.zeros_like(nrrd_data, dtype = "uint8")
+        if len(represented_regions_to_add) == 0:
+            print("Not represented in the annotation volume.")
+            continue
+        else:
+            print("Aggregating regions...")
 
         def is_in_descendants(val):
-            return +(val in descendants_and_current)
+            return +(val in represented_regions_to_add)
         
         vectorized_is_in_descendants = np.vectorize(is_in_descendants, otypes = ["uint8"])
         region_mask = vectorized_is_in_descendants(nrrd_data)
