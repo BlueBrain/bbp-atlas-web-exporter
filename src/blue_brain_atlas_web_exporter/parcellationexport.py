@@ -9,6 +9,7 @@ import json
 import os
 import platform
 import subprocess
+import re
 import nrrd
 import numpy as np
 from skimage import measure
@@ -151,7 +152,77 @@ def export_obj(vertices, triangles, filepath, origin, transform_3x3, decimation 
     os.chmod(full_binary_path, 750)
     args = f"{full_binary_path} {filepath} {filepath} {str(decimation)}"
     subprocess.run(args, shell=True, check=True)
+
+
+def nodeToLayerIndex(node):
+    """
+    From a Node (TreeIndexer), extract the list of cortical layers
+    """
+    upper_acronym = node['acronym'].upper()
+    cerebral_cortex_id = 688
+
+    if cerebral_cortex_id not in node["_ascendants"]:
+        return []
+
+    if upper_acronym.startswith("CA"):
+        return []
+
+    # find the first digit in the acronym
+    m = re.search(r"\d", upper_acronym)
+    if not m:
+        return []
     
+    first_digit_index = m.start()
+
+    # the layer term can help us spotting the regions that are in a different "column"
+    # but same layer
+    layer_term = upper_acronym[first_digit_index:]
+
+    layer_term_upper = layer_term.upper()
+    layer_index = None
+
+    # Example: "1" or "2"
+    if len(layer_term_upper) == 1:
+        return [layer_term_upper]
+
+    # Example: "6A" or "6B". In this particular case, we want to return "6A" but also "6"
+    if len(layer_term_upper) == 2:
+        return [layer_term_upper, layer_term_upper[0]]
+
+    # Example: "2/3". This pattern is never used for more than 2 layers
+    # so we won't find "1/3"
+    if "/" in layer_term_upper:
+        return layer_term_upper.split('/')
+
+    # Example: sometimes for more than 2 layers "1-3", or Sometimes used for only two "1-2"
+    if "-" in layer_term_upper:
+        top_layer, bottom_layer = list(map(int, layer_term_upper.split('-')))
+        all_layers = list(map(str, list(range(top_layer, bottom_layer + 1))))
+        return all_layers
+
+
+def getNeighboursIds(roi_mask, whole_brain_parcellation):
+    # Create a mask of the roi outer contour and apply it to the whole brain volume
+    dilated_roi = ndimage.binary_dilation(roi_mask, iterations = 1).astype(np.uint32)
+    roi_neighbour_mask = dilated_roi - roi_mask
+    neighbour_regions = whole_brain_parcellation.copy()
+    neighbour_regions[roi_neighbour_mask == 0] = 0
+
+    contour_nb_voxels = np.count_nonzero(roi_neighbour_mask)
+
+    # List the neighbour regions by their ids
+    neighbour_regions_ids, neighbour_regions_counts = np.unique(neighbour_regions, return_counts=True)
+    neighbour_regions_ratios = neighbour_regions_counts / contour_nb_voxels
+    adjacent_to_ratios = dict(zip(neighbour_regions_ids, neighbour_regions_ratios))
+    del adjacent_to_ratios[0]
+    return adjacent_to_ratios
+
+
+def writeMetadata(data, filepath):
+    metadata_file = open(filepath, 'w')
+    metadata_file.write(json.dumps(data, ensure_ascii = False, indent = 2))
+    metadata_file.close()
+
 
 def main():
     """Main entry point allowing external calls
@@ -206,6 +277,13 @@ def main():
 
     # For each region, we create a mask that contains all the sub regions
     metadata = {}
+
+    # key: region id, value: a list with all the layers for this given region
+    layers_per_node = {}
+
+    # key: region id, value: {continuousWith: regionIds[], adjacentTo: regionIds[]}
+    neighbours_per_node = {}
+    
     for region_id in flat_tree:
         region_counter += 1
         region_node = flat_tree[region_id]
@@ -255,9 +333,40 @@ def main():
 
         print()
 
-        # if the mask is all black, then there is no mesh to build
+        # getting the list of layers for this region
+        region_layers = nodeToLayerIndex(region_node)
+        region_layers_set = set(region_layers)
+
+        # if the mask is all black, then there is no mesh to build,
+        # though we still want to list the region in metadata
         if not np.any(region_mask):
+            metadata[str(region_id)] = {
+                "id": region_id,
+                "regionVolume": None,
+                "regionVolumeRatioToWholeBrain": None,
+                "layers": region_layers,
+                "adjacentTo": None,
+                "continuousWith": None,
+            }
+
+            # Exporting metadata for this current brain region
+            writeMetadata(metadata[str(region_id)], os.path.join(out_mask_dir, str(region_id) + ".json"))
             continue
+
+        # computing region neighbours
+        print("Computing adjacency...")
+        adjacent_counts = getNeighboursIds(region_mask, nrrd_data)
+        continuous_with = []
+
+        for nei_id in adjacent_counts:
+            nei_node = flat_tree[nei_id]
+            nei_layers = set(nodeToLayerIndex(nei_node))
+            
+            # check if this neighbour has some layers in common with the ROI
+            sharing_same_layer = not nei_layers.isdisjoint(region_layers_set)
+
+            if sharing_same_layer:
+                continuous_with.append(nei_id)
 
         # exporting mask files
         print("Export NRRD mask...")
@@ -276,18 +385,25 @@ def main():
         export_obj(vertices, triangles, rough_mesh_filepath, origin, transform_3x3, decimation=0.15)
 
         # exporting metadata
-        print("Export JSON metadata...")
+        print("Add JSON metadata...")
         region_volume = float(np.count_nonzero(region_mask) * voxel_world_volume)
         metadata[str(region_id)] = {
             "id": region_id,
             "regionVolume": region_volume,
             "regionVolumeRatioToWholeBrain": region_volume / whole_brain_volume,
+            "layers": region_layers,
+            "adjacentTo": adjacent_counts,
+            "continousWith": continuous_with,
         }
+
+        # Exporting metadata for this current brain region
+        writeMetadata(metadata[str(region_id)], os.path.join(out_mask_dir, str(region_id) + ".json"))
         
-        
+    # exporting the metadata for the whole brain
     metadata_file = open(out_metadata_path, 'w')
     metadata_file.write(json.dumps(metadata, ensure_ascii = False, indent = 2))
     metadata_file.close()
+    writeMetadata(metadata, out_metadata_path)
 
 
 if __name__ == "__main__":
