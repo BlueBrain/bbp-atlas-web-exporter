@@ -213,7 +213,7 @@ def getNeighboursIds(roi_mask, whole_brain_parcellation):
     # List the neighbour regions by their ids
     neighbour_regions_ids, neighbour_regions_counts = np.unique(neighbour_regions, return_counts=True)
     neighbour_regions_ratios = neighbour_regions_counts / contour_nb_voxels
-    adjacent_to_ratios = dict(zip(neighbour_regions_ids, neighbour_regions_ratios))
+    adjacent_to_ratios = dict(zip(neighbour_regions_ids.tolist() , neighbour_regions_ratios.tolist()))
     del adjacent_to_ratios[0]
     return adjacent_to_ratios
 
@@ -288,7 +288,7 @@ def main():
         region_counter += 1
         region_node = flat_tree[region_id]
 
-        print("{}/{} - [{}] {}".format(region_counter, total_region, region_id, flat_tree[region_id]["name"]))
+        print("\n{}/{} - [{}] {}".format(region_counter, total_region, region_id, flat_tree[region_id]["name"]))
 
         # region_mask = np.zeros_like(nrrd_data, dtype = "uint8")
 
@@ -330,8 +330,6 @@ def main():
         
         vectorized_is_in_descendants = np.vectorize(is_in_descendants, otypes = ["uint8"])
         region_mask = vectorized_is_in_descendants(nrrd_data)
-
-        print()
 
         # getting the list of layers for this region
         region_layers = nodeToLayerIndex(region_node)
