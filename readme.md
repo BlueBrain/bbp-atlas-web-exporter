@@ -28,6 +28,9 @@ Here is the list of arguments:
 
 ## parcellationexport
 The CLI `parcellationexport` computes all the meshes (`.OBJ` files) as well as the binary masks (`.nrrd` files) for all the regions available in both the hierarchy file (input) and the annotation volume (input). Many intermediate regions from the hierarchy file do not have any voxel representation and instead are composed of voxels from their child region, thus, this CLI computes all the aggregations necessary to recreate binary masks for those regions. This CLI also output a JSON metadata file with metrics regarding the volume and volume ration for all the regions.  
+
+For each region, this CLI also generates a list of neighbour regions (`adjacentTo`) and the list of neighbour region that are on the same layer, when applicable (`continuousWith`). Note that `continuousWith` is a subset of `adjacentTo` and while `adjacentTo` entirely relies on volumetric data, `continuousWith` leverages the region hierarchy and in particular the regions' acronyms. Those metadata are part of the main JSON payload, alongside with the region volumes.
+
 Here is the list of arguments:  
 - `--help` displays the help menu
 - `--version` displays the version number
