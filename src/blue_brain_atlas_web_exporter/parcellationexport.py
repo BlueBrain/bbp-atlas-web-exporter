@@ -391,7 +391,7 @@ def main():
             "regionVolumeRatioToWholeBrain": region_volume / whole_brain_volume,
             "layers": region_layers,
             "adjacentTo": adjacent_counts,
-            "continousWith": continuous_with,
+            "continuousWith": continuous_with,
         }
 
         # Exporting metadata for this current brain region
