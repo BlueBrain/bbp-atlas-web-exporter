@@ -15,6 +15,8 @@ import numpy as np
 from skimage import measure
 from scipy import ndimage
 import blue_brain_atlas_web_exporter.TreeIndexer as TreeIndexer
+import blue_brain_atlas_web_exporter.json_to_jsonld as json_to_jsonld
+
 import blue_brain_atlas_web_exporter
 from blue_brain_atlas_web_exporter import __version__
 
@@ -69,6 +71,14 @@ def parse_args(args):
         required=True,
         metavar="<FILE PATH>",
         help="Path to the output metadata file (json)")
+    
+    parser.add_argument(
+        "--out-hierarchy-jsonld",
+        dest="out_hierarchy_jsonld",
+        required=True,
+        metavar="<FILE PATH>",
+        help="Path to the output hierarchy JSON-LD file built from the input "
+        "hierarchy JSON file.")
 
 
     return parser.parse_args(args)
@@ -149,7 +159,10 @@ def export_obj(vertices, triangles, filepath, origin, transform_3x3, decimation 
     }
 
     full_binary_path = os.path.join(module_dirpath, "simplify", os_to_dir[platform.system()])
-    os.chmod(full_binary_path, 750)
+    try:
+        os.chmod(full_binary_path, 750)
+    except PermissionError:
+        pass
     args = f"{full_binary_path} {filepath} {filepath} {str(decimation)}"
     subprocess.run(args, shell=True, check=True)
 
