@@ -250,6 +250,7 @@ def main():
     out_mesh_dir = args.out_mesh_dir
     out_mask_dir = args.out_mask_dir
     out_metadata_path = args.out_metadata
+    out_hierarchy_jsonld_path = args.out_hierarchy_jsonld
 
     # create out_mesh_dir if inexistant
     try:
@@ -277,7 +278,7 @@ def main():
     # loading json annotation
     jsoncontent = json.loads(open(hierarchy, "r").read())
 
-    # sometimes, the 1.json has its content in a "msg" sub prop (the original vesion has).
+    # sometimes, the 1.json has its content in a "msg" sub prop (the original version has).
     # and some other versions don't. Here we deal with both
     if "msg" in jsoncontent:
         flat_tree = TreeIndexer.flattenTree(jsoncontent['msg'][0])
@@ -409,12 +410,16 @@ def main():
 
         # Exporting metadata for this current brain region
         writeMetadata(metadata[str(region_id)], os.path.join(out_mask_dir, str(region_id) + ".json"))
-        
+
     # exporting the metadata for the whole brain
-    metadata_file = open(out_metadata_path, 'w')
-    metadata_file.write(json.dumps(metadata, ensure_ascii = False, indent = 2))
-    metadata_file.close()
     writeMetadata(metadata, out_metadata_path)
+
+    # transforming the hierarchy JSON to JSONLD
+    hierarchy_jsonld = json_to_jsonld.hierarchy_json_to_jsonld(jsoncontent)
+    if hierarchy_jsonld:
+        writeMetadata(hierarchy_jsonld, out_hierarchy_jsonld_path)
+    else:
+        raise Exception("Failed to generate a JSONLD version of the hierarchy JSON file")
 
 
 if __name__ == "__main__":
