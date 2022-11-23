@@ -52,6 +52,7 @@ def hierarchy_json_to_jsonld(json_content: Dict) -> Dict:
     hierarchy_graph.bind('subClassOf', RDFS["subClassOf"])
     hierarchy_graph.bind('notation', SKOS["notation"])
     hierarchy_graph.bind('prefLabel', SKOS["prefLabel"])
+    hierarchy_graph.bind('altLabel', SKOS["altLabel"])
     hierarchy_graph.bind('NIFRID', NIFRID)
     hierarchy_graph.bind('owl', OWL)
     hierarchy_graph.bind('schema', SCHEMA)
@@ -130,6 +131,8 @@ def add_class_to_graph(json_content, hierarchy_graph, hierarchy_uri):
 
     hierarchy_graph.add((ss, SKOS.notation, Literal(json_content["acronym"])))
     hierarchy_graph.add((ss, SCHEMA.identifier, Literal(str(json_content["id"]), datatype=XSD.string)))
+    if json_content["name"] != json_content["acronym"]:
+        hierarchy_graph.add((ss, SKOS.altLabel, Literal(json_content["acronym"])))
 
 
 def graph_free_jsonld(jsonld_doc, context=None):
