@@ -14,12 +14,19 @@ import nrrd
 import numpy as np
 from skimage import measure
 from scipy import ndimage
-import blue_brain_atlas_web_exporter.TreeIndexer as TreeIndexer
-import blue_brain_atlas_web_exporter.json_to_jsonld as json_to_jsonld
 
 import blue_brain_atlas_web_exporter
-from blue_brain_atlas_web_exporter import __version__
+from blue_brain_atlas_web_exporter import __version__, __file__
+import src.blue_brain_atlas_web_exporter.TreeIndexer as TreeIndexer
+import src.blue_brain_atlas_web_exporter.json_to_jsonld as json_to_jsonld
 
+children = json_to_jsonld.CHILDREN
+represented = json_to_jsonld.REPRESENTED
+regionVolume = json_to_jsonld.REGIONVOLUME
+regionVolumeRatio = json_to_jsonld.REGIONVOLUMERATIO
+
+OUT_MESH_DIR = "--out-mesh-dir"
+mesh_ext = "obj"
 
 def parse_args(args):
     """Parse command line parameters
@@ -52,9 +59,9 @@ def parse_args(args):
         help="The NRRD parcellation volume file")
 
     parser.add_argument(
-        "--out-mesh-dir",
+        OUT_MESH_DIR,
         dest="out_mesh_dir",
-        required=True,
+        required=False,
         metavar="<DIRECTORY PATH>",
         help="The output directory to create the OBJ region mesh files")
 
@@ -71,6 +78,13 @@ def parse_args(args):
         required=True,
         metavar="<FILE PATH>",
         help="Path to the output metadata file (json)")
+
+    parser.add_argument(
+        "--out-hierarchy-volume",
+        dest="out_hierarchy_volume",
+        required=True,
+        metavar="<FILE PATH>",
+        help="Path to the output hierarchy including volume info (json)")
     
     parser.add_argument(
         "--out-hierarchy-jsonld",
@@ -82,6 +96,14 @@ def parse_args(args):
 
 
     return parser.parse_args(args)
+
+
+def voxel_world_volume(nrrd_header):
+    # As said in the doc (http://teem.sourceforge.net/nrrd/format.html#spacedirections),
+    # each vector in "space directions" is for an axis of the array, hence, they are column vectors
+    # if the transform were to be represented as 3x3 matrix.
+    transform_3x3 = nrrd_header["space directions"]
+    return np.linalg.norm(transform_3x3[0]) * np.linalg.norm(transform_3x3[1]) * np.linalg.norm(transform_3x3[2])
 
 
 def mask_to_mesh_data(arr):
@@ -174,7 +196,7 @@ def nodeToLayerIndex(node):
     upper_acronym = node['acronym'].upper()
     cerebral_cortex_id = 688
 
-    if cerebral_cortex_id not in node["_ascendants"]:
+    if cerebral_cortex_id not in node[TreeIndexer.ASCENDANTS_PROP_NAME]:
         return []
 
     if upper_acronym.startswith("CA"):
@@ -237,24 +259,12 @@ def writeMetadata(data, filepath):
     metadata_file.close()
 
 
-def main():
-    """Main entry point allowing external calls
-
-    Args:
-      args ([str]): command line parameter list
-    """
-    args = parse_args(sys.argv[1:])
-
-    hierarchy = args.hierarchy
-    parcellation_volume = args.parcellation_volume
-    out_mesh_dir = args.out_mesh_dir
-    out_mask_dir = args.out_mask_dir
-    out_metadata_path = args.out_metadata
-    out_hierarchy_jsonld_path = args.out_hierarchy_jsonld
-
-    # create out_mesh_dir if inexistant
+def main(hierarchy, parcellation_volume, out_mask_dir, out_mesh_dir, out_metadata_path, out_hierarchy_volume_path, out_hierarchy_jsonld_path):
     try:
-        os.makedirs(out_mesh_dir)
+        if out_mesh_dir:
+            os.makedirs(out_mesh_dir)
+        else:
+            print("No %s provided, meshes will not be exported" % OUT_MESH_DIR)
         os.makedirs(out_mask_dir)
     except FileExistsError as e:
         pass
@@ -265,15 +275,12 @@ def main():
     mask_header["type"] = "uint8"
 
     origin = nrrd_header["space origin"]
-    
-    # As said in the doc (http://teem.sourceforge.net/nrrd/format.html#spacedirections),
-    # each vector in "space directions" is for an axis of the array, hence, they are column vectors
-    # if the transform were to be represented as 3x3 matrix.
-    transform_3x3 = nrrd_header["space directions"]
-    voxel_world_volume = np.linalg.norm(transform_3x3[0]) * np.linalg.norm(transform_3x3[1]) * np.linalg.norm(transform_3x3[2])
-        
+
+    volume_unit = "cubic micrometer" # missing in the nrrd_header, need to hardcode
+
     # volume of the whole brain in cubic micrometers
-    whole_brain_volume = float(np.count_nonzero(nrrd_data) * voxel_world_volume)
+    voxel_volume = voxel_world_volume(nrrd_header)
+    whole_brain_volume = float(np.count_nonzero(nrrd_data) * voxel_volume)
 
     # loading json annotation
     jsoncontent = json.loads(open(hierarchy, "r").read())
@@ -281,9 +288,12 @@ def main():
     # sometimes, the 1.json has its content in a "msg" sub prop (the original version has).
     # and some other versions don't. Here we deal with both
     if "msg" in jsoncontent:
-        flat_tree = TreeIndexer.flattenTree(jsoncontent['msg'][0])
+        jsoncontent_body = jsoncontent['msg'][0]
     else:
-        flat_tree = TreeIndexer.flattenTree(jsoncontent)
+        jsoncontent_body = jsoncontent
+    jsoncontent_body["unitCode"] = volume_unit
+
+    flat_tree = TreeIndexer.flattenTree(jsoncontent_body, children_prop_name=children)
 
     total_region = len(flat_tree)
     region_counter = 0
@@ -291,18 +301,19 @@ def main():
 
     # For each region, we create a mask that contains all the sub regions
     metadata = {}
+    represented_regions = []
 
     # key: region id, value: a list with all the layers for this given region
     layers_per_node = {}
 
     # key: region id, value: {continuousWith: regionIds[], adjacentTo: regionIds[]}
     neighbours_per_node = {}
-    
+
     for region_id in flat_tree:
         region_counter += 1
         region_node = flat_tree[region_id]
 
-        print("\n{}/{} - [{}] {}".format(region_counter, total_region, region_id, flat_tree[region_id]["name"]))
+        print("\n{}/{} - [{}] \"{}\"".format(region_counter, total_region, region_id, region_node["name"]))
 
         # region_mask = np.zeros_like(nrrd_data, dtype = "uint8")
 
@@ -321,23 +332,57 @@ def main():
         #     # masking the current region
         #     region_mask[nrrd_data == child_id] = 1
 
+        # getting the list of layers for this region
+        region_layers = nodeToLayerIndex(region_node)
+        region_layers_set = set(region_layers)
+
+        # if the mask is all black, then there is no mesh to build,
+        # though we still want to list the region in metadata
+        region_id_str = str(region_id)
+        metadata[region_id_str] = {
+            "id": region_id,
+            represented: False,
+            "unitCode": volume_unit,
+            regionVolume: None,
+            regionVolumeRatio: None,
+            "layers": region_layers,
+            "adjacentTo": None,
+            "continuousWith": None,
+        }
+        metadata_reg = metadata[region_id_str]
+
         # all the regions to be added, in theory (aka. not taking into account that some may not be represented in the parcellation volume)
-        regions_to_add = region_node["_descendants"] + [region_id]
-        
+        regions_to_add = region_node[TreeIndexer.DESCENDANTS_PROP_NAME] + [region_id]
         # list of descendants that are actually represented in the parcellation volume
         represented_regions_to_add = set()
-        
         # among all the regions that should be added (in theory), keep only the ones that are actually represented in the annotation volume
         # (this is to speedup thing and not waste time on aggregating not-existing regions)
         for r_id in regions_to_add:
             if r_id in unique_values_in_nrrd:
                 represented_regions_to_add.add(r_id)
 
+        jsoncontent_region = jsoncontent_body
+        while jsoncontent_region["id"] != region_id:
+            for jsoncontent_region_ch in jsoncontent_region[children]:
+                if jsoncontent_region_ch["id"] == region_id:
+                    jsoncontent_region = jsoncontent_region_ch
+                    break
+                else:
+                    if region_id not in flat_tree[jsoncontent_region_ch["id"]][TreeIndexer.DESCENDANTS_PROP_NAME]:
+                        continue
+                    else:
+                        jsoncontent_region = jsoncontent_region_ch
+
+        jsoncontent_region.update(metadata_reg)
+
         if len(represented_regions_to_add) == 0:
-            print("Not represented in the annotation volume.")
+            print(f"Region not represented in the annotation volume, nor its {TreeIndexer.DESCENDANTS_PROP_NAME}.")
             continue
         else:
-            print("Aggregating regions...")
+            metadata_reg[represented] = True
+            represented_regions.append(region_id)
+
+        print("Aggregating regions...")
 
         def is_in_descendants(val):
             return +(val in represented_regions_to_add)
@@ -345,82 +390,80 @@ def main():
         vectorized_is_in_descendants = np.vectorize(is_in_descendants, otypes = ["uint8"])
         region_mask = vectorized_is_in_descendants(nrrd_data)
 
-        # getting the list of layers for this region
-        region_layers = nodeToLayerIndex(region_node)
-        region_layers_set = set(region_layers)
+        if np.any(region_mask): # isn't this always true given the continue above?
+            # computing region neighbours
+            print("Computing adjacency...")
+            adjacent_counts = getNeighboursIds(region_mask, nrrd_data)
+            continuous_with = []
 
-        # if the mask is all black, then there is no mesh to build,
-        # though we still want to list the region in metadata
-        if not np.any(region_mask):
-            metadata[str(region_id)] = {
-                "id": region_id,
-                "regionVolume": None,
-                "regionVolumeRatioToWholeBrain": None,
-                "layers": region_layers,
-                "adjacentTo": None,
-                "continuousWith": None,
-            }
+            for nei_id in adjacent_counts:
+                if nei_id not in flat_tree:
+                    print(f"Region {nei_id} is adjacent to {region_id} in {parcellation_volume}, but it is not present in {hierarchy}on_mask")
+                    continue
+                nei_node = flat_tree[nei_id]
+                nei_layers = set(nodeToLayerIndex(nei_node))
+                # check if this neighbour has some layers in common with the ROI
+                sharing_same_layer = not nei_layers.isdisjoint(region_layers_set)
+                if sharing_same_layer:
+                    continuous_with.append(nei_id)
 
-            # Exporting metadata for this current brain region
-            writeMetadata(metadata[str(region_id)], os.path.join(out_mask_dir, str(region_id) + ".json"))
-            continue
+            # Updating metadata
+            print("Add JSON metadata...")
+            region_volume = float(np.count_nonzero(region_mask) * voxel_volume)
+            metadata_reg[regionVolume] = region_volume
+            metadata_reg[regionVolumeRatio] = region_volume / whole_brain_volume
+            metadata_reg["adjacentTo"] = adjacent_counts
+            metadata_reg["continuousWith"] = continuous_with
 
-        # computing region neighbours
-        print("Computing adjacency...")
-        adjacent_counts = getNeighboursIds(region_mask, nrrd_data)
-        continuous_with = []
+            # exporting mask files
+            print("Export NRRD mask...")
+            nrrd.write(os.path.join(out_mask_dir, region_id_str + ".nrrd"), region_mask, mask_header)
 
-        for nei_id in adjacent_counts:
-            nei_node = flat_tree[nei_id]
-            nei_layers = set(nodeToLayerIndex(nei_node))
-            
-            # check if this neighbour has some layers in common with the ROI
-            sharing_same_layer = not nei_layers.isdisjoint(region_layers_set)
+            if out_mesh_dir: # much longer than previous steps
+                # Creating the mesh with the marching cube
+                print("Marching cube...")
+                # vertices, triangles, normals, values = measure.marching_cubes_lewiner(region_mask)
+                vertices, triangles = mask_to_mesh_data(region_mask)
+                # Exporting the mesh as OBJ file
+                print("Export OBJ mesh...")
+                rough_mesh_filepath = os.path.join(out_mesh_dir, ".".join([str(region_id),mesh_ext]))
+                # export_obj(vertices, triangles, rough_mesh_filepath, origin, transform_3x3, origin, transform_3x3)
+                export_obj(vertices, triangles, rough_mesh_filepath, origin, transform_3x3, decimation=0.15)
+        else:
+            print("region_mask is empty")
 
-            if sharing_same_layer:
-                continuous_with.append(nei_id)
-
-        # exporting mask files
-        print("Export NRRD mask...")
-        nrrd.write(os.path.join(out_mask_dir, str(region_id) + ".nrrd"), region_mask, mask_header)
-
-        # Creating the mesh with the marching cube
-        print("Marching cube...")
-        # vertices, triangles, normals, values = measure.marching_cubes_lewiner(region_mask)
-        vertices, triangles = mask_to_mesh_data(region_mask)
-    
-
-        # Exporting the mesh as OBJ file
-        print("Export OBJ mesh...")
-        rough_mesh_filepath = os.path.join(out_mesh_dir, str(region_id) + ".obj")
-        # export_obj(vertices, triangles, rough_mesh_filepath, origin, transform_3x3, origin, transform_3x3)
-        export_obj(vertices, triangles, rough_mesh_filepath, origin, transform_3x3, decimation=0.15)
-
-        # exporting metadata
-        print("Add JSON metadata...")
-        region_volume = float(np.count_nonzero(region_mask) * voxel_world_volume)
-        metadata[str(region_id)] = {
-            "id": region_id,
-            "regionVolume": region_volume,
-            "regionVolumeRatioToWholeBrain": region_volume / whole_brain_volume,
-            "layers": region_layers,
-            "adjacentTo": adjacent_counts,
-            "continuousWith": continuous_with,
-        }
+        jsoncontent_region.update(metadata_reg)
 
         # Exporting metadata for this current brain region
-        writeMetadata(metadata[str(region_id)], os.path.join(out_mask_dir, str(region_id) + ".json"))
+        writeMetadata(metadata_reg, os.path.join(out_mask_dir, region_id_str + ".json"))
 
     # exporting the metadata for the whole brain
     writeMetadata(metadata, out_metadata_path)
 
-    # transforming the hierarchy JSON to JSONLD
-    hierarchy_jsonld = json_to_jsonld.hierarchy_json_to_jsonld(jsoncontent)
-    if hierarchy_jsonld:
-        writeMetadata(hierarchy_jsonld, out_hierarchy_jsonld_path)
-    else:
-        raise Exception("Failed to generate a JSONLD version of the hierarchy JSON file")
+    # exporting a new hierarchy JSON including the regions info
+    writeMetadata(jsoncontent_body, out_hierarchy_volume_path)
 
+    if out_hierarchy_jsonld_path:
+        # transforming the hierarchy JSON to JSONLD
+        hierarchy_jsonld = json_to_jsonld.hierarchy_json_to_jsonld(jsoncontent_body)
+        if hierarchy_jsonld:
+            writeMetadata(hierarchy_jsonld, out_hierarchy_jsonld_path)
+        else:
+            raise Exception("Failed to generate a JSONLD version of the hierarchy JSON file")
+
+    if out_mesh_dir: # check that all the meshes have been created
+        for region_id in represented_regions:
+            mesh_name = ".".join([str(region_id),mesh_ext])
+            if mesh_name not in os.listdir(out_mesh_dir):
+                raise Exception(f"Region {region_id} is represented in {parcellation_volume} but no mesh {mesh_name} is present in {out_mesh_dir}")
+        print(f"\nA mesh is available (in {out_mesh_dir}) for any region represented in {parcellation_volume}")
 
 if __name__ == "__main__":
-    main()
+    """Main entry point allowing external calls
+
+    Args:
+      args ([str]): command line parameter list
+    """
+    args = parse_args(sys.argv[1:])
+
+    main(args.hierarchy, args.parcellation_volume, args.out_mask_dir, args.out_mesh_dir, args.out_metadata_path, args.out_hierarchy_volume_path, args.out_hierarchy_jsonld_path)

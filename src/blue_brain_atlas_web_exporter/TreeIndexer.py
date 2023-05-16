@@ -1,5 +1,9 @@
 import copy
 
+PARENT_PROP_NAME = "_parent"
+DESCENDANTS_PROP_NAME = "_descendants"
+ASCENDANTS_PROP_NAME = "_ascendants"
+
 def flattenTree(tree, id_prop_name="id", children_prop_name="children"):
     """
     Transforms a nested tree into a flat dictionnary where the key is the id
@@ -7,10 +11,6 @@ def flattenTree(tree, id_prop_name="id", children_prop_name="children"):
     list of ids (under the property name given by children_prop_name).
     This creates the properties: "_parent", "_descendants" and "_ascendants"
     """
-
-    PARENT_PROP_NAME = "_parent"
-    DESCENDANTS_PROP_NAME = "_descendants"
-    ASCENDANTS_PROP_NAME = "_ascendants"
 
     # let's not damage the original tree by making a deep copy
     tree_copy = copy.deepcopy(tree)

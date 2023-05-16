@@ -10,7 +10,7 @@ import json
 from rdflib import BNode, Literal
 
 # Namespaces
-DCTERMS=Namespace('http://purl.org/dc/terms/')
+DCTERMS = Namespace('http://purl.org/dc/terms/')
 NSG = Namespace('https://neuroshapes.org/')
 SKOS = Namespace('http://www.w3.org/2004/02/skos/core#')
 NIFRID = Namespace('http://uri.neuinfo.org/nif/nifstd/readable/')
@@ -21,21 +21,22 @@ mba = Namespace('http://api.brain-map.org/api/v2/data/Structure/')
 PAXRAT = Namespace('http://uri.interlex.org/paxinos/uris/rat/labels/')
 PROV = Namespace('http://www.w3.org/ns/prov#')
 UBERON = Namespace('http://purl.obolibrary.org/obo/UBERON_')
+BMO = Namespace("https://bbp.epfl.ch/ontologies/core/bmo/")
 TYPE_FOR_FRAMING = NSG["FrameType"]
 
+ROOT_REGION = 997
+CHILDREN = "children"
+
+REPRESENTED = "representedInAnnotation"
+REGIONVOLUME = "regionVolume"
+REGIONVOLUMERATIO = "regionVolumeRatioToWholeBrain"
 
 def hierarchy_json_to_jsonld(json_content: Dict) -> Dict:
-    jsonpath_expr = parse('$..children.[*]')
+    jsonpath_expr = parse(f'$..{CHILDREN}.[*]') # missing the root (997) node
     matches = jsonpath_expr.find(json_content)
-    match_map = dict()
+    match_map = {str(ROOT_REGION): json_content}
     for match in matches:
         match_map[str(match.value['id'])] = match.value
-
-    msg_jsonpath_expr = parse('$..msg.[*]')
-    msg_matches = msg_jsonpath_expr.find(json_content)
-    msg_match_map = dict()
-    for match in msg_matches:
-        msg_match_map[str(match.value['id'])] = match.value
 
     hierarchy_graph = rdflib.Graph()
     # Todo: provide a non blank node URI
@@ -62,10 +63,7 @@ def hierarchy_json_to_jsonld(json_content: Dict) -> Dict:
     hierarchy_graph.bind('isDefinedBy', RDFS["isDefinedBy"])
     hierarchy_graph.bind('mba', mba)
     hierarchy_graph.bind('PROV', PROV)
-    hierarchy_graph.bind('PROV', PROV)
-
-    for _, v in msg_match_map.items():
-        add_class_to_graph(v, hierarchy_graph, hierarchy_uri)
+    hierarchy_graph.bind('BMO', BMO)
 
     for _, v in match_map.items():
         add_class_to_graph(v, hierarchy_graph, hierarchy_uri)
@@ -78,22 +76,22 @@ def hierarchy_json_to_jsonld(json_content: Dict) -> Dict:
         frame_json = {
             "@context": context,
             "@type": str(OWL.Ontology),
-            "defines": [{
+            "contains": [{
                 "@type": str(TYPE_FOR_FRAMING),
                 "@embed": True
             }]
         }
         hierarchy_graph_framed = jsonld.frame(json.loads(hierarchy_graph_str), frame_json)
-        hierarchy_graph_framed = graph_free_jsonld(hierarchy_graph_framed)
-        hierarchy_graph_framed["defines"]["@type"] = "owl:Class"
-        hierarchy_graph_framed["defines"] = [hierarchy_graph_framed["defines"]]
-        if "nsg:tempDefines" in hierarchy_graph_framed:
-            defined_ids = filter(lambda x: x["@id"] != "mba:997", hierarchy_graph_framed["nsg:tempDefines"])
-            hierarchy_graph_framed["defines"].extend(defined_ids)
-            hierarchy_graph_framed.pop("nsg:tempDefines")
-        return hierarchy_graph_framed
 
-        return hierarchy_graph_framed
+        hierarchy_framed = graph_free_jsonld(hierarchy_graph_framed)
+        hierarchy_framed["defines"][0]["@type"] = "owl:Class" # it's already the case
+        #hierarchy_framed["defines"] = [hierarchy_framed["defines"]]
+        if "nsg:tempDefines" in hierarchy_framed:
+            defined_ids = filter(lambda x: x["@id"] != "mba:"+str(ROOT_REGION), hierarchy_framed["nsg:tempDefines"])
+            hierarchy_framed["defines"].extend(defined_ids)
+            hierarchy_framed.pop("nsg:tempDefines")
+        return hierarchy_framed
+
     else:
         return None
 
@@ -102,7 +100,7 @@ def add_class_to_graph(json_content, hierarchy_graph, hierarchy_uri):
     ss = mba[str(json_content["id"])]
     hierarchy_graph.add((ss, RDFS.subClassOf, NSG.BrainRegion))
 
-    if str(json_content["id"]) == "997":
+    if json_content["id"] == ROOT_REGION:
         hierarchy_graph.add((ss, RDF.type, TYPE_FOR_FRAMING))
     else:
         hierarchy_graph.add((ss, RDF.type, OWL.Class))
@@ -114,11 +112,18 @@ def add_class_to_graph(json_content, hierarchy_graph, hierarchy_uri):
     hierarchy_graph.add((ss, mba.graph_order, Literal(json_content["graph_order"])))
     hierarchy_graph.add((ss, mba.st_level, Literal(json_content["st_level"])))
     hierarchy_graph.add((ss, mba.hemisphere_id, Literal(json_content["hemisphere_id"])))
+    hierarchy_graph.add((ss, BMO.hasLayerLocationPhenotype, Literal(json_content["layers"])))
+    hierarchy_graph.add((ss, BMO.representedInAnnotation, Literal(json_content[REPRESENTED])))
+    if json_content[REPRESENTED]:
+        hierarchy_graph.add((ss, BMO.regionVolume, Literal(json_content[REGIONVOLUME])))
+        hierarchy_graph.add((ss, BMO.regionVolumeRatioToWholeBrain, Literal(json_content[REGIONVOLUMERATIO])))
+        hierarchy_graph.add((ss, BMO.adjacentTo, Literal(json_content["adjacentTo"])))
+        hierarchy_graph.add((ss, BMO.continuousWith, Literal(json_content["continuousWith"])))
 
     hierarchy_graph.add((SCHEMA.isPartOf, RDF.type, OWL.ObjectProperty))
     hierarchy_graph.add((SCHEMA.hasPart, RDF.type, OWL.ObjectProperty))
 
-    children = json_content["children"]
+    children = json_content[CHILDREN]
 
     for child in children:
         child_fragment = child["id"]

@@ -1,0 +1,22 @@
+image: python:3.7
+
+include:
+  - project: dke/apps/templates/job-templates
+    file: job-templates.yml
+
+stages:
+  - unit-test
+
+unit_test:
+  stage: unit-test
+  extends: .unit-tests
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+  before_script:
+    - pip install -r requirements.txt
+    - pip install .
+  variables:
+    SRC_PROJECT: '$CI_PROJECT_PATH'
+    TEST_FOLDER: 'tests'
+    KUBERNETES_MEMORY_LIMIT: 4Gi
+    KUBERNETES_MEMORY_REQUEST: 4Gi

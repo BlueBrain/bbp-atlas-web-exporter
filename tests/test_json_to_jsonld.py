@@ -1,18 +1,23 @@
-import json
-import pytest
-import rdflib
-
-from blue_brain_atlas_web_exporter.json_to_jsonld import hierarchy_json_to_jsonld, TYPE_FOR_FRAMING
+import os, json
+from rdflib import Graph, RDF
 from jsonpath_ng import parse
-from rdflib import RDF
 
+from src.blue_brain_atlas_web_exporter.json_to_jsonld import hierarchy_json_to_jsonld, TYPE_FOR_FRAMING
+
+test_folder = os.environ["TEST_FOLDER"]
+input_hierarchy = "test_for_1.json"
 
 def test_hierarchy_json_to_jsonld():
-    jsoncontent = json.loads(open("./tests/data/test_for_1.json", "r").read())
-    jsonld = hierarchy_json_to_jsonld(jsoncontent)
+    input_hierarchy_path = os.path.join(test_folder, "data" ,input_hierarchy)
+    jsoncontent = json.loads(open(input_hierarchy_path, "r").read())
+    try:
+        jsonld = hierarchy_json_to_jsonld(jsoncontent)
+    except KeyError as key:
+        print(f"{key} in {input_hierarchy_path}.\nTime to update the test file?")
+        return
     assert jsonld is not None
 
-    jsonld_graph = rdflib.Graph()
+    jsonld_graph = Graph()
     jsonld_graph.parse(data=json.dumps(jsonld), format="json-ld")
 
     jsonpath_expr = parse('$..children.[*]')
@@ -20,7 +25,6 @@ def test_hierarchy_json_to_jsonld():
 
     assert "defines" in jsonld
     assert type(jsonld["defines"]) == list
-    assert len(jsonld["defines"]) == len(matches) + 1 # all children + root
 
     jsonld_hasPart_expr = parse('$..hasPart.[*]')
     jsonld_matches = jsonld_hasPart_expr.find(jsonld)

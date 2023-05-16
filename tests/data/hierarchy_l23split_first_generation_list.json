@@ -1,0 +1,78 @@
+{"id": 997,
+ "atlas_id": -1,
+ "ontology_id": 1,
+ "acronym": "root",
+ "name": "Whole mouse brain",
+ "color_hex_triplet": "FFFFFF",
+ "graph_order": 0,
+ "st_level": 0,
+ "hemisphere_id": 3,
+ "parent_structure_id": null,
+ "children": [
+  {
+   "id": 8,
+   "atlas_id": 0,
+   "ontology_id": 1,
+   "acronym": "grey",
+   "name": "Basic cell groups and regions",
+   "color_hex_triplet": "BFDAE3",
+   "graph_order": 1,
+   "st_level": 1,
+   "hemisphere_id": 3,
+   "parent_structure_id": 997,
+   "children": [567, 343, 512]
+  },
+  {
+   "id": 1009,
+   "atlas_id": 691,
+   "ontology_id": 1,
+   "acronym": "fiber tracts",
+   "name": "fiber tracts",
+   "color_hex_triplet": "CCCCCC",
+   "graph_order": 1101,
+   "st_level": 1,
+   "hemisphere_id": 3,
+   "parent_structure_id": 997,
+   "children": [967, 960, 484682512, 983, 1000, 991]
+  },
+  {
+   "id": 73,
+   "atlas_id": 716,
+   "ontology_id": 1,
+   "acronym": "VS",
+   "name": "ventricular systems",
+   "color_hex_triplet": "AAAAAA",
+   "graph_order": 1292,
+   "st_level": 1,
+   "hemisphere_id": 3,
+   "parent_structure_id": 997,
+   "children": [81, 124, 129, 140, 145, 164]
+  },
+  {
+   "id": 1024,
+   "atlas_id": 693,
+   "ontology_id": 1,
+   "acronym": "grv",
+   "name": "grooves",
+   "color_hex_triplet": "AAAAAA",
+   "graph_order": 1304,
+   "st_level": 1,
+   "hemisphere_id": 3,
+   "parent_structure_id": 997,
+   "children": [1032, 1040, 624]
+  },
+  {
+   "id": 304325711,
+   "atlas_id": null,
+   "ontology_id": 1,
+   "acronym": "retina",
+   "name": "retina",
+   "color_hex_triplet": "7F2E7E",
+   "graph_order": 1326,
+   "st_level": 1,
+   "hemisphere_id": 3,
+   "parent_structure_id": 997,
+   "children": []
+  }
+ ]
+}

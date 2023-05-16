@@ -9,4 +9,7 @@ developer has to maintain)
 import pkg_resources
 # This is the name of your current package itself
 from blue_brain_atlas_web_exporter import __name__
-__version__ = pkg_resources.get_distribution(__name__).version
+try:
+    __version__ = pkg_resources.get_distribution(__name__).version
+except pkg_resources.DistributionNotFound as err:
+    print(err)
