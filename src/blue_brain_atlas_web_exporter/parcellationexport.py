@@ -17,8 +17,8 @@ from scipy import ndimage
 
 import blue_brain_atlas_web_exporter
 from blue_brain_atlas_web_exporter import __version__, __file__
-import src.blue_brain_atlas_web_exporter.TreeIndexer as TreeIndexer
-import src.blue_brain_atlas_web_exporter.json_to_jsonld as json_to_jsonld
+import blue_brain_atlas_web_exporter.TreeIndexer as TreeIndexer
+import blue_brain_atlas_web_exporter.json_to_jsonld as json_to_jsonld
 
 children = json_to_jsonld.CHILDREN
 represented = json_to_jsonld.REPRESENTED
@@ -98,11 +98,10 @@ def parse_args(args):
     return parser.parse_args(args)
 
 
-def voxel_world_volume(nrrd_header):
+def voxel_world_volume(transform_3x3):
     # As said in the doc (http://teem.sourceforge.net/nrrd/format.html#spacedirections),
     # each vector in "space directions" is for an axis of the array, hence, they are column vectors
     # if the transform were to be represented as 3x3 matrix.
-    transform_3x3 = nrrd_header["space directions"]
     return np.linalg.norm(transform_3x3[0]) * np.linalg.norm(transform_3x3[1]) * np.linalg.norm(transform_3x3[2])
 
 
@@ -203,17 +202,16 @@ def nodeToLayerIndex(node):
         return []
 
     # find the first digit in the acronym
-    m = re.search(r"\d", upper_acronym)
+    m = re.search(r"-\d", upper_acronym)
     if not m:
         return []
     
-    first_digit_index = m.start()
+    first_digit_index = m.start() + 1 # 1 accounts for the dash
 
     # the layer term can help us spotting the regions that are in a different "column"
     # but same layer
-    layer_term = upper_acronym[first_digit_index:]
+    layer_term_upper = upper_acronym[first_digit_index:]
 
-    layer_term_upper = layer_term.upper()
     layer_index = None
 
     # Example: "1" or "2"
@@ -259,7 +257,7 @@ def writeMetadata(data, filepath):
     metadata_file.close()
 
 
-def main(hierarchy, parcellation_volume, out_mask_dir, out_mesh_dir, out_metadata_path, out_hierarchy_volume_path, out_hierarchy_jsonld_path):
+def main_(hierarchy, parcellation_volume, out_mask_dir, out_mesh_dir, out_metadata_path, out_hierarchy_volume_path, out_hierarchy_jsonld_path):
     try:
         if out_mesh_dir:
             os.makedirs(out_mesh_dir)
@@ -278,8 +276,9 @@ def main(hierarchy, parcellation_volume, out_mask_dir, out_mesh_dir, out_metadat
 
     volume_unit = "cubic micrometer" # missing in the nrrd_header, need to hardcode
 
+    transform_3x3 = nrrd_header["space directions"]
     # volume of the whole brain in cubic micrometers
-    voxel_volume = voxel_world_volume(nrrd_header)
+    voxel_volume = voxel_world_volume(transform_3x3)
     whole_brain_volume = float(np.count_nonzero(nrrd_data) * voxel_volume)
 
     # loading json annotation
@@ -441,7 +440,7 @@ def main(hierarchy, parcellation_volume, out_mask_dir, out_mesh_dir, out_metadat
     writeMetadata(metadata, out_metadata_path)
 
     # exporting a new hierarchy JSON including the regions info
-    writeMetadata(jsoncontent_body, out_hierarchy_volume_path)
+    writeMetadata(jsoncontent, out_hierarchy_volume_path)
 
     if out_hierarchy_jsonld_path:
         # transforming the hierarchy JSON to JSONLD
@@ -458,7 +457,7 @@ def main(hierarchy, parcellation_volume, out_mask_dir, out_mesh_dir, out_metadat
                 raise Exception(f"Region {region_id} is represented in {parcellation_volume} but no mesh {mesh_name} is present in {out_mesh_dir}")
         print(f"\nA mesh is available (in {out_mesh_dir}) for any region represented in {parcellation_volume}")
 
-if __name__ == "__main__":
+def main():
     """Main entry point allowing external calls
 
     Args:
@@ -466,4 +465,4 @@ if __name__ == "__main__":
     """
     args = parse_args(sys.argv[1:])
 
-    main(args.hierarchy, args.parcellation_volume, args.out_mask_dir, args.out_mesh_dir, args.out_metadata_path, args.out_hierarchy_volume_path, args.out_hierarchy_jsonld_path)
+    main_(args.hierarchy, args.parcellation_volume, args.out_mask_dir, args.out_mesh_dir, args.out_metadata, args.out_hierarchy_volume, args.out_hierarchy_jsonld)

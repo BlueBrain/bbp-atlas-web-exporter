@@ -25,7 +25,7 @@ def test_parcellationexport():
     input_hierarchy_path = os.path.join(data_folder, input_hierarchy)
     output_metadata_path = os.path.join(data_folder, output_metadata)
 
-    parcellationexport.main(input_hierarchy_path, input_annotation_path, "brain_region_mask", "", output_metadata_path, output_hierarchy_path, "")
+    parcellationexport.main_(input_hierarchy_path, input_annotation_path, "brain_region_mask", "", output_metadata_path, output_hierarchy_path, "")
 
 def test_volumeFields():
     # Check that representedInAnnotation, regionVolume and regionVolumeRatio are correctly set
@@ -40,7 +40,7 @@ def test_volumeFields():
 
     # Check that children volumes add up to parent volume
     nrrd_data, nrrd_header = nrrd.read(input_annotation_path)
-    root_volume = np.count_nonzero(nrrd_data == output_hierarchy_json['id']) * parcellationexport.voxel_world_volume(nrrd_header)
+    root_volume = np.count_nonzero(nrrd_data == output_hierarchy_json['id']) * parcellationexport.voxel_world_volume(nrrd_header["space directions"])
 
     assert (output_hierarchy_json[regionVolume]  ==  root_volume + volume_sum)
 
