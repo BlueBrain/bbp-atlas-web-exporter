@@ -113,7 +113,7 @@ def add_class_to_graph(json_content, hierarchy_graph, hierarchy_uri):
     hierarchy_graph.add((ss, BMO.hasLayerLocationPhenotype, Literal(json_content["layers"])))
     for key in ["atlas_id", "graph_order"]:
         if key in json_content:
-            hierarchy_graph.add((ss, eval("mba.key"), Literal(json_content[key])))
+            hierarchy_graph.add((ss, eval(f"mba.{key}"), Literal(json_content[key])))
     hierarchy_graph.add((ss, BMO.representedInAnnotation, Literal(json_content[REPRESENTED])))
     if json_content[REPRESENTED]:
         hierarchy_graph.add((ss, BMO.regionVolume, Literal(json_content[REGIONVOLUME])))
