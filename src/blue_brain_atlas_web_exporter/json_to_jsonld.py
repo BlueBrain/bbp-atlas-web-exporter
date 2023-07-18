@@ -5,7 +5,7 @@ from jsonpath_ng import parse
 
 import rdflib
 from pyld import jsonld
-from rdflib.namespace import Namespace, RDF, RDFS,OWL, XSD
+from rdflib.namespace import Namespace, RDF, RDFS, XSD
 import json
 from rdflib import BNode, Literal
 
@@ -93,7 +93,7 @@ def hierarchy_json_to_jsonld(json_content: Dict) -> Dict:
         return hierarchy_framed
 
     else:
-        return None
+        return {}
 
 
 def add_class_to_graph(json_content, hierarchy_graph, hierarchy_uri):
@@ -107,12 +107,13 @@ def add_class_to_graph(json_content, hierarchy_graph, hierarchy_uri):
     hierarchy_graph.add((hierarchy_uri, NSG.defines, ss))
     hierarchy_graph.add((hierarchy_uri, NSG.tempDefines, ss))
 
-    hierarchy_graph.add((ss, mba.atlas_id, Literal(json_content["atlas_id"])))
     hierarchy_graph.add((ss, mba.color_hex_triplet, Literal(json_content["color_hex_triplet"])))
-    hierarchy_graph.add((ss, mba.graph_order, Literal(json_content["graph_order"])))
     hierarchy_graph.add((ss, mba.st_level, Literal(json_content["st_level"])))
     hierarchy_graph.add((ss, mba.hemisphere_id, Literal(json_content["hemisphere_id"])))
     hierarchy_graph.add((ss, BMO.hasLayerLocationPhenotype, Literal(json_content["layers"])))
+    for key in ["atlas_id", "graph_order"]:
+        if key in json_content:
+            hierarchy_graph.add((ss, eval("mba.key"), Literal(json_content[key])))
     hierarchy_graph.add((ss, BMO.representedInAnnotation, Literal(json_content[REPRESENTED])))
     if json_content[REPRESENTED]:
         hierarchy_graph.add((ss, BMO.regionVolume, Literal(json_content[REGIONVOLUME])))
