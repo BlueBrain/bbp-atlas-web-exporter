@@ -372,6 +372,11 @@ def main_(hierarchy, parcellation_volume, out_mask_dir, out_mesh_dir, out_metada
                     else:
                         jsoncontent_region = jsoncontent_region_ch
 
+        # Remove keys not present in the new regions from the leaves-only hierarchy, to keep uniform regions dictionary
+        keys_to_remove = ["atlas_id", "graph_order", "st_level"]
+        for key in keys_to_remove:
+            jsoncontent_region.pop(key, None)
+
         jsoncontent_region.update(metadata_reg)
 
         if len(represented_regions_to_add) == 0:

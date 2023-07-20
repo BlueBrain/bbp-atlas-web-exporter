@@ -108,12 +108,8 @@ def add_class_to_graph(json_content, hierarchy_graph, hierarchy_uri):
     hierarchy_graph.add((hierarchy_uri, NSG.tempDefines, ss))
 
     hierarchy_graph.add((ss, mba.color_hex_triplet, Literal(json_content["color_hex_triplet"])))
-    hierarchy_graph.add((ss, mba.st_level, Literal(json_content["st_level"])))
     hierarchy_graph.add((ss, mba.hemisphere_id, Literal(json_content["hemisphere_id"])))
     hierarchy_graph.add((ss, BMO.hasLayerLocationPhenotype, Literal(json_content["layers"])))
-    for key in ["atlas_id", "graph_order"]:
-        if key in json_content:
-            hierarchy_graph.add((ss, eval(f"mba.{key}"), Literal(json_content[key])))
     hierarchy_graph.add((ss, BMO.representedInAnnotation, Literal(json_content[REPRESENTED])))
     if json_content[REPRESENTED]:
         hierarchy_graph.add((ss, BMO.regionVolume, Literal(json_content[REGIONVOLUME])))
