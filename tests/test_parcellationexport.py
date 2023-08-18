@@ -1,6 +1,6 @@
-import os, json
-from rdflib import Graph, RDF
-from jsonpath_ng import parse
+import os
+import json
+import pytest
 
 import nrrd
 import numpy as np
@@ -14,18 +14,32 @@ regionVolumeRatio = parcellationexport.regionVolumeRatio
 
 test_folder = os.environ["TEST_FOLDER"]
 data_folder = os.path.join(test_folder, "data")
-input_hierarchy = "hierarchy_l23split_first_generation.json"
-input_annotation = "annotation_first_generation.nrrd"
-input_annotation_path = os.path.join(data_folder, input_annotation)
-output_metadata = "metadata.json"
-output_hierarchy = input_hierarchy.replace(".json", "_volume.json")
-output_hierarchy_path = os.path.join(data_folder, output_hierarchy)
+
+input_hierarchy_path = os.path.join(data_folder, "hierarchy_l23split_first_generation.json")
+input_hierarchy_leaves_only_path = os.path.join(data_folder, "hierarchy_leaves_only.json")
+input_annotation_path = os.path.join(data_folder, "annotation_first_generation.nrrd")
+input_annotation_leaves_only_path = os.path.join(data_folder, "annotation_leaves_only.nrrd")
+output_hierarchy_path = os.path.join(data_folder, "hierarchy_l23split_first_generation_volume.json")
+output_hierarchy_leaves_only_path = os.path.join(data_folder, "hierarchy_leaves_only_volume.json")
+
 
 def test_parcellationexport():
-    input_hierarchy_path = os.path.join(data_folder, input_hierarchy)
-    output_metadata_path = os.path.join(data_folder, output_metadata)
+    output_metadata_path = os.path.join(data_folder, "metadata.json")
+    parcellationexport.main_(input_hierarchy_leaves_only_path,
+        input_annotation_leaves_only_path, "brain_region_mask", "",
+        output_metadata_path, output_hierarchy_leaves_only_path, "")
 
-    parcellationexport.main_(input_hierarchy_path, input_annotation_path, "brain_region_mask", "", output_metadata_path, output_hierarchy_path, "")
+
+def test_check_leaves_only():
+    flat_tree_leaves_only, _, _ = parcellationexport.get_flat_tree(input_hierarchy_leaves_only_path, children)
+    unique_values_in_annotation_leaves_only = parcellationexport.get_unique_values_in_nrrd(input_annotation_leaves_only_path)
+    parcellationexport.check_leaves_only(unique_values_in_annotation_leaves_only, flat_tree_leaves_only, children)
+
+    flat_tree, _, _ = parcellationexport.get_flat_tree(input_hierarchy_path, children)
+    unique_values_in_annotation = parcellationexport.get_unique_values_in_nrrd(input_annotation_path)
+    with pytest.raises(Exception):
+        parcellationexport.check_leaves_only(unique_values_in_annotation, flat_tree, children)
+
 
 def test_volumeFields():
     # Check that representedInAnnotation, regionVolume and regionVolumeRatio are correctly set
@@ -74,4 +88,3 @@ def _key_type(key, key_type, dictionary, filepath):
         print(f"'{key}' is not of type {key_type} for region id {dictionary['id']} in {filepath}")
         print(f"'{key}': {dictionary[key]}")
         exit(1)
-

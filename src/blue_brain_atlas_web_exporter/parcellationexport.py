@@ -257,6 +257,40 @@ def writeMetadata(data, filepath):
     metadata_file.close()
 
 
+def check_leaves_only(regions_in_annotation, flat_tree, children_key):
+    annotation_regions_not_in_hierarchy = []
+    non_leaf_hierarchy_regions_in_annotation = []
+    for reg_id in regions_in_annotation:
+        if reg_id == 0:
+            continue
+        if reg_id in flat_tree:
+            # A leaf region has an empty 'children_key' list
+            if flat_tree[reg_id][children_key]:
+                non_leaf_hierarchy_regions_in_annotation.append(reg_id)
+        else:
+            annotation_regions_not_in_hierarchy.append(reg_id)
+    if annotation_regions_not_in_hierarchy or non_leaf_hierarchy_regions_in_annotation:
+        msg = f"{len(annotation_regions_not_in_hierarchy)} regions in the annotation volume " \
+            f"were not found in the hierarchy:\n{annotation_regions_not_in_hierarchy}\n"
+        msg += f"{len(non_leaf_hierarchy_regions_in_annotation)} regions in the annotation volume " \
+            f"were found being not leaves in the hierarchy:\n{non_leaf_hierarchy_regions_in_annotation}"
+        raise Exception(msg)
+
+
+def get_flat_tree(hierarchy_path, children_key):
+    jsoncontent = json.loads(open(hierarchy_path, "r").read())
+    if "msg" in jsoncontent:
+        jsoncontent_body = jsoncontent['msg'][0]
+    else:
+        jsoncontent_body = jsoncontent
+    return TreeIndexer.flattenTree(jsoncontent_body, children_prop_name=children_key), jsoncontent_body, jsoncontent
+
+
+def get_unique_values_in_nrrd(nrrd_file):
+    nrrd_data, _ = nrrd.read(nrrd_file)
+    return np.unique(nrrd_data)
+
+
 def main_(hierarchy, parcellation_volume, out_mask_dir, out_mesh_dir, out_metadata_path, out_hierarchy_volume_path, out_hierarchy_jsonld_path):
     try:
         if out_mesh_dir:
@@ -282,21 +316,12 @@ def main_(hierarchy, parcellation_volume, out_mask_dir, out_mesh_dir, out_metada
     whole_brain_volume = float(np.count_nonzero(nrrd_data) * voxel_volume)
 
     # loading json annotation
-    jsoncontent = json.loads(open(hierarchy, "r").read())
-
-    # sometimes, the 1.json has its content in a "msg" sub prop (the original version has).
-    # and some other versions don't. Here we deal with both
-    if "msg" in jsoncontent:
-        jsoncontent_body = jsoncontent['msg'][0]
-    else:
-        jsoncontent_body = jsoncontent
+    flat_tree, jsoncontent_body, jsoncontent = get_flat_tree(hierarchy, children)
     jsoncontent_body["unitCode"] = volume_unit
-
-    flat_tree = TreeIndexer.flattenTree(jsoncontent_body, children_prop_name=children)
 
     total_region = len(flat_tree)
     region_counter = 0
-    unique_values_in_nrrd = np.unique(nrrd_data)
+    unique_values_in_nrrd = get_unique_values_in_nrrd(parcellation_volume)
 
     # For each region, we create a mask that contains all the sub regions
     metadata = {}
@@ -469,5 +494,11 @@ def main():
       args ([str]): command line parameter list
     """
     args = parse_args(sys.argv[1:])
+
+    unique_values_in_annotation = get_unique_values_in_nrrd(args.parcellation_volume)
+    flat_tree, _, _ = get_flat_tree(args.hierarchy, children)
+
+    print("Performing check for leaves-only annotation")
+    check_leaves_only(unique_values_in_annotation, flat_tree, children)
 
     main_(args.hierarchy, args.parcellation_volume, args.out_mask_dir, args.out_mesh_dir, args.out_metadata, args.out_hierarchy_volume, args.out_hierarchy_jsonld)
