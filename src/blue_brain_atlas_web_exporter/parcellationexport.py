@@ -16,7 +16,7 @@ from skimage import measure
 from scipy import ndimage
 
 import blue_brain_atlas_web_exporter
-from blue_brain_atlas_web_exporter import __version__, __file__
+from blue_brain_atlas_web_exporter import __version__
 import blue_brain_atlas_web_exporter.TreeIndexer as TreeIndexer
 import blue_brain_atlas_web_exporter.json_to_jsonld as json_to_jsonld
 
@@ -182,7 +182,7 @@ def export_obj(vertices, triangles, filepath, origin, transform_3x3, decimation 
     full_binary_path = os.path.join(module_dirpath, "simplify", os_to_dir[platform.system()])
     try:
         os.chmod(full_binary_path, 750)
-    except PermissionError:
+    except OSError:
         pass
     args = f"{full_binary_path} {filepath} {filepath} {str(decimation)}"
     subprocess.run(args, shell=True, check=True)
