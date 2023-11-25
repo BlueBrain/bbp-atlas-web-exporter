@@ -1,11 +1,26 @@
-image: python:3.7
+default:
+  image: python:3.7
 
 include:
   - project: dke/apps/templates/job-templates
     file: job-templates.yml
+  - project: nse/ci
+    file:
+      - /ci/lib/common.yml
+      - /ci/jobs/build-package.yml
+      - /ci/jobs/publish-package.yml
 
 stages:
   - unit-test
+  - build
+  - publish
+
+build-package:
+  rules:
+    - when: on_success
+publish-package:
+  rules:
+    - if: $CI_COMMIT_TAG
 
 unit_test:
   stage: unit-test
