@@ -7,7 +7,7 @@ import rdflib
 from pyld import jsonld
 from rdflib.namespace import Namespace, RDF, RDFS, XSD
 import json
-from rdflib import BNode, Literal
+from rdflib import BNode, Literal, URIRef
 
 # Namespaces
 DCTERMS = Namespace('http://purl.org/dc/terms/')
@@ -62,8 +62,8 @@ def hierarchy_json_to_jsonld(json_content: Dict) -> Dict:
     hierarchy_graph.bind('identifier', SCHEMA["identifier"])
     hierarchy_graph.bind('isDefinedBy', RDFS["isDefinedBy"])
     hierarchy_graph.bind('mba', mba)
-    hierarchy_graph.bind('PROV', PROV)
-    hierarchy_graph.bind('BMO', BMO)
+    hierarchy_graph.bind('prov', PROV)
+    hierarchy_graph.bind('bmo', BMO)
 
     for _, v in match_map.items():
         add_class_to_graph(v, hierarchy_graph, hierarchy_uri)
@@ -109,7 +109,8 @@ def add_class_to_graph(json_content, hierarchy_graph, hierarchy_uri):
 
     hierarchy_graph.add((ss, mba.color_hex_triplet, Literal(json_content["color_hex_triplet"])))
     hierarchy_graph.add((ss, mba.hemisphere_id, Literal(json_content["hemisphere_id"])))
-    hierarchy_graph.add((ss, BMO.hasLayerLocationPhenotype, Literal(json_content["layers"])))
+    for layer in json_content["layers"]:
+        hierarchy_graph.add((ss, BMO.hasLayerLocationPhenotype, URIRef(layer)))
     hierarchy_graph.add((ss, BMO.representedInAnnotation, Literal(json_content[REPRESENTED])))
     if json_content[REPRESENTED]:
         hierarchy_graph.add((ss, BMO.regionVolume, Literal(json_content[REGIONVOLUME])))

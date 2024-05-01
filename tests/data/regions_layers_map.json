@@ -1,0 +1,4862 @@
+{
+    "mba:1005": {
+        "acronym": "AUDp6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:1026": {
+        "acronym": "SSp-ul6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:1045": {
+        "acronym": "ECT6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:1062": {
+        "acronym": "SSp-bfd6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:1081": {
+        "acronym": "ILA6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:1085": {
+        "acronym": "MOs6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:121": {
+        "acronym": "VISl6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:12998": {
+        "acronym": "SS6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:132": {
+        "acronym": "PL6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:182305713": {
+        "acronym": "SSp-un6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:2": {
+        "acronym": "SSp-m6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:227": {
+        "acronym": "ACA6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:243": {
+        "acronym": "AUDd6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:279": {
+        "acronym": "RSPagl6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:305": {
+        "acronym": "VISp6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:312782570": {
+        "acronym": "VISa6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:312782598": {
+        "acronym": "VISli6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:312782624": {
+        "acronym": "VISrl6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:312782652": {
+        "acronym": "VISpor6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:330": {
+        "acronym": "RSPd6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:340": {
+        "acronym": "PTLp6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:355": {
+        "acronym": "AIp6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:368": {
+        "acronym": "PERI6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:393": {
+        "acronym": "VISpl6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:441": {
+        "acronym": "VISam6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:456": {
+        "acronym": "AUDpo6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:461": {
+        "acronym": "SSp-tr6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:469": {
+        "acronym": "VISpm6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:480149226": {
+        "acronym": "VISrll6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:480149254": {
+        "acronym": "VISlla6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:480149282": {
+        "acronym": "VISmma6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:480149310": {
+        "acronym": "VISmmp6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:480149338": {
+        "acronym": "VISm6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:488": {
+        "acronym": "ORBl6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:497": {
+        "acronym": "VIS6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:510": {
+        "acronym": "SSp-ll6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:516": {
+        "acronym": "ORB6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:526322264": {
+        "acronym": "FRP6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:527696977": {
+        "acronym": "ORBm6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:598": {
+        "acronym": "AUDv6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:60": {
+        "acronym": "ENTl6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:622": {
+        "acronym": "RSPv6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:649": {
+        "acronym": "VISal6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:662": {
+        "acronym": "GU6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:680": {
+        "acronym": "ORBvl6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:699": {
+        "acronym": "AIv6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:719": {
+        "acronym": "SSp6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:16": {
+        "acronym": "6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:786": {
+        "acronym": "TEa6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:819": {
+        "acronym": "ACAv6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:831": {
+        "acronym": "AId6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:849": {
+        "acronym": "VISC6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:882": {
+        "acronym": "MOp6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:893": {
+        "acronym": "SSs6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:927": {
+        "acronym": "ACAd6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:929": {
+        "acronym": "SSp-n6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:947": {
+        "acronym": "MO6b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_8440003",
+                "layer_label": "L6b"
+            }
+        ]
+    },
+    "mba:1006": {
+        "acronym": "SSp-tr1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:1030": {
+        "acronym": "SSp-ll1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:1034": {
+        "acronym": "TTd1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:1067": {
+        "acronym": "TTv1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:10693": {
+        "acronym": "PAR1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:10696": {
+        "acronym": "POST1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:10699": {
+        "acronym": "PRE1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:107": {
+        "acronym": "MO1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:1074": {
+        "acronym": "VISal1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:1121": {
+        "acronym": "ENTl1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:1140": {
+        "acronym": "TR1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:120": {
+        "acronym": "AIp1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:12993": {
+        "acronym": "SS1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:144": {
+        "acronym": "OT1-3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:152": {
+        "acronym": "PIR1-3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:160": {
+        "acronym": "AON1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:171": {
+        "acronym": "PL1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:182305693": {
+        "acronym": "SSp-un1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:192": {
+        "acronym": "COAa1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:216": {
+        "acronym": "COApl1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:240": {
+        "acronym": "COApm1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:259": {
+        "acronym": "ENTmv1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:264": {
+        "acronym": "ORB1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:281": {
+        "acronym": "VISam1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:297": {
+        "acronym": "TTd1-4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:306": {
+        "acronym": "TTv1-3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:312782550": {
+        "acronym": "VISa1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:312782578": {
+        "acronym": "VISli1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:312782604": {
+        "acronym": "VISrl1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:312782632": {
+        "acronym": "VISpor1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:320": {
+        "acronym": "MOp1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:36": {
+        "acronym": "GU1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:376": {
+        "acronym": "COApl1-3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:383": {
+        "acronym": "COApm1-3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:392": {
+        "acronym": "NLOT1-3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:400": {
+        "acronym": "PAA1-3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:421": {
+        "acronym": "VISl1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:442": {
+        "acronym": "RSPd1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:448": {
+        "acronym": "ORBl1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:450": {
+        "acronym": "SSp-ul1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:480149206": {
+        "acronym": "VISrll1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:480149234": {
+        "acronym": "VISlla1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:480149262": {
+        "acronym": "VISmma1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:480149290": {
+        "acronym": "VISmmp1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:480149318": {
+        "acronym": "VISm1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:484": {
+        "acronym": "ORBm1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:496": {
+        "acronym": "DP1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:517": {
+        "acronym": "TR1-3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:526": {
+        "acronym": "ENTm1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:527": {
+        "acronym": "AUDd1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:532": {
+        "acronym": "PTLp1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:540": {
+        "acronym": "PERI1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:542": {
+        "acronym": "RSPv1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:558": {
+        "acronym": "SSp-n1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:572": {
+        "acronym": "ACA1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:584": {
+        "acronym": "COApl1-2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:588": {
+        "acronym": "ACAv1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:592": {
+        "acronym": "COApm1-2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:593": {
+        "acronym": "VISp1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:656": {
+        "acronym": "MOs1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:671": {
+        "acronym": "RSPagl1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:68": {
+        "acronym": "FRP1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:696": {
+        "acronym": "AUDpo1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:704": {
+        "acronym": "AIv1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:707": {
+        "acronym": "ILA1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:735": {
+        "acronym": "AUDp1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:750": {
+        "acronym": "VISpl1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:793": {
+        "acronym": "SSp1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:801": {
+        "acronym": "VIS1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:805": {
+        "acronym": "VISpm1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:836": {
+        "acronym": "ECT1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:873": {
+        "acronym": "SSs1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:878": {
+        "acronym": "SSp-m1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:897": {
+        "acronym": "VISC1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:935": {
+        "acronym": "ACAd1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:959": {
+        "acronym": "AUDv1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:969": {
+        "acronym": "ORBvl1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:97": {
+        "acronym": "TEa1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:981": {
+        "acronym": "SSp-bfd1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:996": {
+        "acronym": "AId1",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005390",
+                "layer_label": "L1"
+            }
+        ]
+    },
+    "mba:1010": {
+        "acronym": "VISC4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:1035": {
+        "acronym": "SSs4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:1047": {
+        "acronym": "SSp-bfd4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:1059": {
+        "acronym": "TTd4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:1086": {
+        "acronym": "SSp-tr4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:1094": {
+        "acronym": "SSp-ll4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:1114": {
+        "acronym": "VISal4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:12995": {
+        "acronym": "SS4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:148": {
+        "acronym": "GU4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:182305701": {
+        "acronym": "SSp-un4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:234": {
+        "acronym": "TEa4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:312": {
+        "acronym": "ENTl4/5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:312782558": {
+        "acronym": "VISa4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:312782586": {
+        "acronym": "VISli4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:312782612": {
+        "acronym": "VISrl4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:312782640": {
+        "acronym": "VISpor4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:401": {
+        "acronym": "VISam4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:419": {
+        "acronym": "ENTmv4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:480149214": {
+        "acronym": "VISrll4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:480149242": {
+        "acronym": "VISlla4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:480149270": {
+        "acronym": "VISmma4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:480149298": {
+        "acronym": "VISmmp4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:480149326": {
+        "acronym": "VISm4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:501": {
+        "acronym": "VISpm4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:545": {
+        "acronym": "RSPd4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:573": {
+        "acronym": "VISl4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:577": {
+        "acronym": "SSp-ul4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:635": {
+        "acronym": "PTLp4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:654": {
+        "acronym": "SSp-n4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:678": {
+        "acronym": "AUDd4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:712": {
+        "acronym": "ENTm4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:721": {
+        "acronym": "VISp4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:759": {
+        "acronym": "AUDpo4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:816": {
+        "acronym": "AUDp4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:865": {
+        "acronym": "SSp4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:869": {
+        "acronym": "VISpl4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:913": {
+        "acronym": "VIS4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:92": {
+        "acronym": "ENTl4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:950": {
+        "acronym": "SSp-m4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:990": {
+        "acronym": "AUDv4",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005393",
+                "layer_label": "L4"
+            }
+        ]
+    },
+    "mba:1015": {
+        "acronym": "ACAd5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:1023": {
+        "acronym": "AUDv5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:1058": {
+        "acronym": "VISC5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:1070": {
+        "acronym": "SSp-bfd5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:1090": {
+        "acronym": "SSs5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:1101": {
+        "acronym": "AId5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:1111": {
+        "acronym": "SSp-tr5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:1125": {
+        "acronym": "ORBvl5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:1128": {
+        "acronym": "SSp-ll5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:1133": {
+        "acronym": "ENTmv5/6",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005395",
+                "layer_label": "L6"
+            }
+        ]
+    },
+    "mba:12996": {
+        "acronym": "SS5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:139": {
+        "acronym": "ENTl5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:182305705": {
+        "acronym": "SSp-un5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:187": {
+        "acronym": "GU5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:233": {
+        "acronym": "VISal5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:252": {
+        "acronym": "AUDd5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:289": {
+        "acronym": "TEa5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:299": {
+        "acronym": "MO5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:312782562": {
+        "acronym": "VISa5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:312782590": {
+        "acronym": "VISli5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:312782616": {
+        "acronym": "VISrl5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:312782644": {
+        "acronym": "VISpor5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:344": {
+        "acronym": "AIp5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:352": {
+        "acronym": "ORB5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:363": {
+        "acronym": "PL5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:387": {
+        "acronym": "ENTl5/6",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005395",
+                "layer_label": "L6"
+            }
+        ]
+    },
+    "mba:433": {
+        "acronym": "VISam5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:480149218": {
+        "acronym": "VISrll5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:480149246": {
+        "acronym": "VISlla5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:480149274": {
+        "acronym": "VISmma5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:480149302": {
+        "acronym": "VISmmp5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:480149330": {
+        "acronym": "VISm5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:526157192": {
+        "acronym": "FRP5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:550": {
+        "acronym": "ENTm5/6",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005395",
+                "layer_label": "L6"
+            }
+        ]
+    },
+    "mba:565": {
+        "acronym": "VISpm5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:610": {
+        "acronym": "RSPd5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:613": {
+        "acronym": "VISl5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:620": {
+        "acronym": "ORBm5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:625": {
+        "acronym": "SSp-ul5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:630": {
+        "acronym": "ORBl5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:646": {
+        "acronym": "DP5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:648": {
+        "acronym": "MOp5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:683": {
+        "acronym": "PTLp5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:687": {
+        "acronym": "RSPv5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:692": {
+        "acronym": "PERI5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:702": {
+        "acronym": "SSp-n5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:727": {
+        "acronym": "ENTm5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:739": {
+        "acronym": "ACA5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:767": {
+        "acronym": "MOs5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:772": {
+        "acronym": "ACAv5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:774": {
+        "acronym": "RSPagl5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:778": {
+        "acronym": "VISp5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:791": {
+        "acronym": "AUDpo5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:800": {
+        "acronym": "AIv5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:827": {
+        "acronym": "ILA5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:847": {
+        "acronym": "AUDp5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:902": {
+        "acronym": "VISpl5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:921": {
+        "acronym": "SSp5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:937": {
+        "acronym": "VIS5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:974": {
+        "acronym": "SSp-m5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:988": {
+        "acronym": "ECT5",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005394",
+                "layer_label": "L5"
+            }
+        ]
+    },
+    "mba:1021": {
+        "acronym": "MOs6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:1038": {
+        "acronym": "SSp-bfd6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:1046": {
+        "acronym": "VISam6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:1054": {
+        "acronym": "ILA6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:1102": {
+        "acronym": "SSp-m6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:12997": {
+        "acronym": "SS6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:156": {
+        "acronym": "AUDd6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:179": {
+        "acronym": "ACA6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:182305709": {
+        "acronym": "SSp-un6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:249": {
+        "acronym": "AUDpo6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:257": {
+        "acronym": "VISpm6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:267": {
+        "acronym": "DP6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:274": {
+        "acronym": "RSPd6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:28": {
+        "acronym": "ENTl6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:308": {
+        "acronym": "PTLp6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:312782566": {
+        "acronym": "VISa6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:312782594": {
+        "acronym": "VISli6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:312782620": {
+        "acronym": "VISrl6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:312782648": {
+        "acronym": "VISpor6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:314": {
+        "acronym": "AIp6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:33": {
+        "acronym": "VISp6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:335": {
+        "acronym": "PERI6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:377": {
+        "acronym": "VISpl6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:440": {
+        "acronym": "ORBl6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:457": {
+        "acronym": "VIS6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:476": {
+        "acronym": "ORB6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:478": {
+        "acronym": "SSp-ll6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:480149222": {
+        "acronym": "VISrll6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:480149250": {
+        "acronym": "VISlla6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:480149278": {
+        "acronym": "VISmma6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:480149306": {
+        "acronym": "VISmmp6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:480149334": {
+        "acronym": "VISm6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:520": {
+        "acronym": "AUDv6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:526157196": {
+        "acronym": "FRP6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:590": {
+        "acronym": "RSPv6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:601": {
+        "acronym": "VISal6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:608": {
+        "acronym": "ORBvl6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:638": {
+        "acronym": "GU6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:644": {
+        "acronym": "MO6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:675": {
+        "acronym": "AIv6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:686": {
+        "acronym": "SSp6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:729": {
+        "acronym": "TEa6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:74": {
+        "acronym": "VISl6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:783": {
+        "acronym": "AId6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:810": {
+        "acronym": "ACAv6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:84": {
+        "acronym": "PL6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:844": {
+        "acronym": "MOp6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:857": {
+        "acronym": "VISC6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:862": {
+        "acronym": "SSs6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:889": {
+        "acronym": "SSp-n6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:9": {
+        "acronym": "SSp-tr6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:906": {
+        "acronym": "RSPagl6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:910": {
+        "acronym": "ORBm6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:919": {
+        "acronym": "ACAd6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:945": {
+        "acronym": "SSp-ul6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:954": {
+        "acronym": "AUDp6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:977": {
+        "acronym": "ECT6a",
+        "layers": [
+            {
+                "layer_ID": "https://bbp.epfl.ch/ontologies/core/bmo/neocortex_layer_6a",
+                "layer_label": "L6a"
+            }
+        ]
+    },
+    "mba:1042": {
+        "acronym": "TTd2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1053": {
+        "acronym": "ACA2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1066": {
+        "acronym": "VISam2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:10694": {
+        "acronym": "PAR2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:10697": {
+        "acronym": "POST2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:10700": {
+        "acronym": "PRE2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1075": {
+        "acronym": "TTv2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1106": {
+        "acronym": "VISC2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1127": {
+        "acronym": "TEa2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:113": {
+        "acronym": "SSp-ll2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1141": {
+        "acronym": "TR2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:12994": {
+        "acronym": "SS2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:163": {
+        "acronym": "AIp2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:168": {
+        "acronym": "AON2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:180": {
+        "acronym": "GU2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:182305697": {
+        "acronym": "SSp-un2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:195": {
+        "acronym": "PL2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:20": {
+        "acronym": "ENTl2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:200": {
+        "acronym": "COAa2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:201": {
+        "acronym": "SSp-bfd2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:211": {
+        "acronym": "ACAd2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:219": {
+        "acronym": "MO2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:224": {
+        "acronym": "COApl2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:241": {
+        "acronym": "PTLp2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:248": {
+        "acronym": "COApm2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:251": {
+        "acronym": "AUDp2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:269": {
+        "acronym": "VISpl2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:288": {
+        "acronym": "ORBvl2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:296": {
+        "acronym": "ACAv2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:304": {
+        "acronym": "PL2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:312782554": {
+        "acronym": "VISa2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:312782582": {
+        "acronym": "VISli2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:312782608": {
+        "acronym": "VISrl2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:312782636": {
+        "acronym": "VISpor2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:324": {
+        "acronym": "ENTmv2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:328": {
+        "acronym": "AId2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:346": {
+        "acronym": "SSp2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:360": {
+        "acronym": "DP2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:41": {
+        "acronym": "VISpm2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:412": {
+        "acronym": "ORBl2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:427": {
+        "acronym": "ECT2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:430": {
+        "acronym": "RSPv2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:434": {
+        "acronym": "RSPd2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:468": {
+        "acronym": "ENTm2a",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:480149210": {
+        "acronym": "VISrll2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:480149238": {
+        "acronym": "VISlla2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:480149266": {
+        "acronym": "VISmma2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:480149294": {
+        "acronym": "VISmmp2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:480149322": {
+        "acronym": "VISm2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:492": {
+        "acronym": "ORB2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:508": {
+        "acronym": "ENTm2b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:524": {
+        "acronym": "ORBm2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:535": {
+        "acronym": "DP2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:543": {
+        "acronym": "ENTm2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:556": {
+        "acronym": "ILA2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:561": {
+        "acronym": "VIS2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:582": {
+        "acronym": "ORBm2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:600": {
+        "acronym": "AUDd2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:606": {
+        "acronym": "RSPv2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:643": {
+        "acronym": "AUDpo2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:657": {
+        "acronym": "SSp-m2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:667": {
+        "acronym": "FRP2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:670": {
+        "acronym": "SSp-tr2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:694": {
+        "acronym": "AIv2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:715": {
+        "acronym": "ENTl2a",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:747": {
+        "acronym": "ILA2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:755": {
+        "acronym": "AUDv2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:764": {
+        "acronym": "ENTl2b",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:806": {
+        "acronym": "SSs2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:821": {
+        "acronym": "VISp2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:838": {
+        "acronym": "SSp-n2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:854": {
+        "acronym": "SSp-ul2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:888": {
+        "acronym": "PERI2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:905": {
+        "acronym": "VISal2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:943": {
+        "acronym": "MOp2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:962": {
+        "acronym": "MOs2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:965": {
+        "acronym": "RSPagl2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:973": {
+        "acronym": "VISl2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:999": {
+        "acronym": "ENTl2/3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            },
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1050": {
+        "acronym": "TTd3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:10695": {
+        "acronym": "PAR3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:10698": {
+        "acronym": "POST3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:10701": {
+        "acronym": "PRE3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1082": {
+        "acronym": "TTv3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1139": {
+        "acronym": "NLOT3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1142": {
+        "acronym": "TR3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:208": {
+        "acronym": "COAa3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:232": {
+        "acronym": "COApl3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:256": {
+        "acronym": "COApm3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:371": {
+        "acronym": "ENTmv3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:52": {
+        "acronym": "ENTl3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:664": {
+        "acronym": "ENTm3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:743": {
+        "acronym": "ENTm6",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005395",
+                "layer_label": "L6"
+            }
+        ]
+    },
+    "mba:391": {
+        "acronym": "CA1slm",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0007640",
+                "layer_label": "SLM"
+            }
+        ]
+    },
+    "mba:431": {
+        "acronym": "CA2slm",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0007640",
+                "layer_label": "SLM"
+            }
+        ]
+    },
+    "mba:471": {
+        "acronym": "CA3slm",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0007640",
+                "layer_label": "SLM"
+            }
+        ]
+    },
+    "mba:399": {
+        "acronym": "CA1so",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005371",
+                "layer_label": "SO"
+            }
+        ]
+    },
+    "mba:438": {
+        "acronym": "CA2so",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005371",
+                "layer_label": "SO"
+            }
+        ]
+    },
+    "mba:486": {
+        "acronym": "CA3so",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005371",
+                "layer_label": "SO"
+            }
+        ]
+    },
+    "mba:407": {
+        "acronym": "CA1sp",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0002313",
+                "layer_label": "SP"
+            }
+        ]
+    },
+    "mba:446": {
+        "acronym": "CA2sp",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0002313",
+                "layer_label": "SP"
+            }
+        ]
+    },
+    "mba:495": {
+        "acronym": "CA3sp",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0002313",
+                "layer_label": "SP"
+            }
+        ]
+    },
+    "mba:415": {
+        "acronym": "CA1sr",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005372",
+                "layer_label": "SR"
+            }
+        ]
+    },
+    "mba:454": {
+        "acronym": "CA2sr",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005372",
+                "layer_label": "SR"
+            }
+        ]
+    },
+    "mba:504": {
+        "acronym": "CA3sr",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005372",
+                "layer_label": "SR"
+            }
+        ]
+    },
+    "mba:837": {
+        "acronym": "SUBd-sr",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005372",
+                "layer_label": "SR"
+            }
+        ]
+    },
+    "mba:479": {
+        "acronym": "CA3slu",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0007637",
+                "layer_label": "SLU"
+            }
+        ]
+    },
+    "mba:2546495501": {
+        "acronym": "MO2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1720700944": {
+        "acronym": "VISrll2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2646114338": {
+        "acronym": "FRP2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2341154899": {
+        "acronym": "VISmmp2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2414821463": {
+        "acronym": "AIp3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3724992631": {
+        "acronym": "VIS2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3376791707": {
+        "acronym": "AIv3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3693772975": {
+        "acronym": "SSp-ul2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3880005807": {
+        "acronym": "ORB3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1758306548": {
+        "acronym": "MOp3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3956191525": {
+        "acronym": "RSPd3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2892558637": {
+        "acronym": "RSPagl3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2598818153": {
+        "acronym": "SSp-bfd3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2224619882": {
+        "acronym": "AIv2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3412423041": {
+        "acronym": "MOs2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3114287561": {
+        "acronym": "VISm2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2430059008": {
+        "acronym": "VIS3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2985091592": {
+        "acronym": "VISli3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2218254883": {
+        "acronym": "ECT2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2887815719": {
+        "acronym": "VISm3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1695203883": {
+        "acronym": "VISa2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3088876178": {
+        "acronym": "AId3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1454256797": {
+        "acronym": "SSp-ll2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3582239403": {
+        "acronym": "ACAv3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3894563657": {
+        "acronym": "VISp3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3269661528": {
+        "acronym": "ORB2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2542216029": {
+        "acronym": "SSs3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3095364455": {
+        "acronym": "ACAd2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3591549811": {
+        "acronym": "SSp-n2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2949903222": {
+        "acronym": "ACA2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3516629919": {
+        "acronym": "ECT3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3937412080": {
+        "acronym": "SS3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3206763505": {
+        "acronym": "VISmma3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1463157755": {
+        "acronym": "VISal2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3683796018": {
+        "acronym": "GU2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3360392253": {
+        "acronym": "PTLp3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1160721590": {
+        "acronym": "VISa3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3192952047": {
+        "acronym": "RSPagl2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2668242174": {
+        "acronym": "PERI3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3808183566": {
+        "acronym": "VISli2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1431942459": {
+        "acronym": "VISpl3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3808433473": {
+        "acronym": "SSp-un2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2906756445": {
+        "acronym": "MO3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3403314552": {
+        "acronym": "VISmmp3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2511156654": {
+        "acronym": "MOs3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1165809076": {
+        "acronym": "AUDp3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2683995601": {
+        "acronym": "VISp2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1890964946": {
+        "acronym": "SSp-ul3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2300544548": {
+        "acronym": "PTLp2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1087129144": {
+        "acronym": "VISlla2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2897348183": {
+        "acronym": "ACAv2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3962734174": {
+        "acronym": "VISl3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2951747260": {
+        "acronym": "SSp-ll3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3582777032": {
+        "acronym": "VISrll3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3314370483": {
+        "acronym": "RSPv3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1037481934": {
+        "acronym": "ORBl3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2413172686": {
+        "acronym": "ORBvl3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3562104832": {
+        "acronym": "SSp-tr2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2208057363": {
+        "acronym": "SSp-un3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2078623765": {
+        "acronym": "ILA3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1896413216": {
+        "acronym": "VISlla3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1624848466": {
+        "acronym": "SSp-n3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2167613582": {
+        "acronym": "AUDv3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3920533696": {
+        "acronym": "VISpor3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1037502706": {
+        "acronym": "ACA3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3781663036": {
+        "acronym": "AUDd2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1942628671": {
+        "acronym": "AUDv2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2361776473": {
+        "acronym": "RSPd2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2153924985": {
+        "acronym": "VISpl2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1672280517": {
+        "acronym": "AIp2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3714509274": {
+        "acronym": "VISrl3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2536061413": {
+        "acronym": "FRP3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2186168811": {
+        "acronym": "AUDd3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:1307372013": {
+        "acronym": "AUDpo2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1355885073": {
+        "acronym": "SS2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3099716140": {
+        "acronym": "SSp3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3049552521": {
+        "acronym": "SSp-m3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2854337283": {
+        "acronym": "TEa3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2790124484": {
+        "acronym": "PL3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3710667749": {
+        "acronym": "VISpm3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3718675619": {
+        "acronym": "MOp2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2026216612": {
+        "acronym": "VISmma2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3132124329": {
+        "acronym": "PERI2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2189208794": {
+        "acronym": "VISC3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2544082156": {
+        "acronym": "VISpm2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2927119608": {
+        "acronym": "AUDp2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1645194511": {
+        "acronym": "VISam2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3803368771": {
+        "acronym": "ORBl2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3893800328": {
+        "acronym": "GU3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3653590473": {
+        "acronym": "ORBvl2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3927629261": {
+        "acronym": "VISl2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2292194787": {
+        "acronym": "VISam3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2336071181": {
+        "acronym": "SSs2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2835688982": {
+        "acronym": "SSp-bfd2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1598869030": {
+        "acronym": "AUDpo3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2439179873": {
+        "acronym": "TEa2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2782023316": {
+        "acronym": "VISpor2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2260827822": {
+        "acronym": "SSp-tr3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:3964792502": {
+        "acronym": "VISC2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2845253318": {
+        "acronym": "VISal3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2102386393": {
+        "acronym": "SSp-m2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:1430875964": {
+        "acronym": "VISrl2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:3250982806": {
+        "acronym": "AId2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    },
+    "mba:2862362532": {
+        "acronym": "ACAd3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2012716980": {
+        "acronym": "ORBm3",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005392",
+                "layer_label": "L3"
+            }
+        ]
+    },
+    "mba:2691358660": {
+        "acronym": "SSp2",
+        "layers": [
+            {
+                "layer_ID": "http://purl.obolibrary.org/obo/UBERON_0005391",
+                "layer_label": "L2"
+            }
+        ]
+    }
+}

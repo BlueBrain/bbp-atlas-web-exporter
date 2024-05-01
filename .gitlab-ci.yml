@@ -35,3 +35,6 @@ unit_test:
     TEST_FOLDER: 'tests'
     KUBERNETES_MEMORY_LIMIT: 8Gi
     KUBERNETES_MEMORY_REQUEST: 8Gi
+  artifacts:
+    paths:
+      - $TEST_FOLDER/data/*
