@@ -10,7 +10,7 @@ Once installed, this package exposes two CLIs:
 `pip install git+https://bbpgitlab.epfl.ch/dke/apps/blue_brain_atlas_web_exporter.git`  
 This will automatically install the CLIs listed below and make them available in your `PATH`.
 
-# Usage
+# Examples
 ## cellexport
 The CLI `cellexport` converts a cell-position SONATA file into a set of RandomAccessBuffer files (RAB) as well as a JSON metadata file containing a few computed metrics.  
 Here is the list of arguments:
@@ -40,9 +40,9 @@ Here is the list of arguments:
 - `--out-mask-dir <DIR PATH>` output path for the directory where the region/parcellation binary mask volumes (*.nrrd*). Each file will have the name corresponding to the ID of the region (example: `997.nrrd` for the whole brain) — **mandatory**
 - `--out-metadata <FILE PATH>` output path to the JSON file that contains the metadata - **mandatory**
 
-# Contributors
-- Jonathan Lurie <jonathan.lurie@epfl.ch> (DKE team)
-
-
-# License
-TODO
+# Funding & Acknowledgment 
+The development of this software was supported by funding to the Blue Brain Project, a 
+research center of the École polytechnique fédérale de Lausanne (EPFL), from the Swiss 
+government's ETH Board of the Swiss Federal Institutes of Technology.
+ 
+Copyright © 2015-2022 Blue Brain Project/EPFL
