@@ -7,7 +7,7 @@ Once installed, this package exposes two CLIs:
 - `parcellationexport`
 
 # Installation
-`pip install -i https://bbpteam.epfl.ch/repository/devpi/simple/ "blue-brain-atlas-web-exporter"`
+`pip install "blue-brain-atlas-web-exporter"`
 
 This will automatically install the CLIs listed below and make them available in your `PATH`.
 
